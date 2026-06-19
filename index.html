@@ -1,1 +1,148 @@
-oii
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variáveis de cores */
+:root {
+    --verde-escuro: #2d6a4f;
+    --verde-medio: #40916c;
+    --verde-claro: #95d5b2;
+    --bege: #f1faee;
+    --marrom: #8d6e63;
+    --texto: #1b4332;
+    --sombra: rgba(0, 0, 0, 0.15);
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #d8f3dc, #f1faee);
+    color: var(--texto);
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde-medio));
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0 4px 10px var(--sombra);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Navegação */
+nav {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: var(--verde-escuro);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--verde-medio);
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Cartões */
+.card {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px var(--sombra);
+    border-left: 6px solid var(--verde-medio);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Botões */
+button,
+.btn {
+    background-color: var(--verde-medio);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: var(--verde-escuro);
+    transform: scale(1.05);
+}
+
+/* Campos de formulário */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid var(--verde-claro);
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--verde-medio);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--verde-escuro);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
